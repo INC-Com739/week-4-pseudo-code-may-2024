@@ -22,8 +22,16 @@
     of having a pair of the same color?
   </p>
   <h2>Solution</h2>
-  <p></p>
-  <p>Result: </p>
+  <p>
+    The maximum number of socks you need to take out to be sure of having a
+    pair of the same color is n+1.
+
+  </p>
+  <p>Result: 
+    <span id="result">
+
+    </span>
+  </p>
 
   <h2>
     Picture/Diagram
@@ -35,9 +43,19 @@
   </div>
   <h2>Pseudocode</h2>
   <pre>
-      Let n be ____.     
+      Let n be the number of colors of socks in the drawer
+      Let maxSocks = n + 1
+      let maxSocks be the maximum number of socks you need to take out to be sure of having a pair of the same color 
+      Return maxSocks
+  </pre>
+  <h2>Code</h2>
+  <pre>
+    function maxSocks(n) {
+      let maxSocks = n + 1;
+      return maxSocks;
+    };     
 
-      Result: _____
+      Result: <span id="code-result"></span>
 
 
 
@@ -46,6 +64,12 @@
   <h2>
     Discussion
   </h2>
+  <p>
+    The solution to this problem is simple. The maximum number of socks you need
+    to take out to be sure of having a pair of the same color is n+1. This is
+    because if you take out n socks, you could have n-1 different colors of
+    socks. The next sock you take out will be the same color as one of the socks
+    you have already taken out.</p>
 
   <h2>Examples</h2>
   <table style="border: solid">
@@ -68,25 +92,25 @@
     <tr>
       <td>2</td>
       <td>
-        ?
+        3
       </td>
     </tr>
     <tr>
       <td>3</td>
       <td>
-        ?
+        4
       </td>
     </tr>
     <tr>
       <td>4</td>
       <td>
-        ?
+        5
       </td>
     </tr>
     <tr>
       <td>5</td>
       <td>
-        ?
+        6
       </td>
     </tr>
 
